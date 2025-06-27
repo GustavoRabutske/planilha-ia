@@ -1,0 +1,17 @@
+# .streamlit/config.toml
+
+[theme]
+# Cor primária para elementos interativos
+primaryColor = "#1c83e1"
+
+# Cor de fundo principal da aplicação
+backgroundColor = "#FFFFFF"
+
+# Cor de fundo para elementos como a sidebar
+secondaryBackgroundColor = "#F0F2F6"
+
+# Cor do texto principal
+textColor = "#262730"
+
+# Fonte para a aplicação
+font = "sans serif"

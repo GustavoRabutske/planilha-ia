@@ -1,0 +1,59 @@
+# .gitignore para projetos Python / Streamlit
+
+# --- Arquivos de Ambiente Virtual ---
+# Nunca envie sua pasta de ambiente virtual
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Arquivo de Variáveis de Ambiente ---
+# ESSENCIAL PARA A SEGURANÇA! Impede o envio da sua chave da API da OpenAI.
+.env
+*.env
+
+# --- Caches e arquivos compilados do Python ---
+# Mantém o repositório limpo de arquivos gerados automaticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# --- Arquivos de configuração de IDEs/Editores ---
+# Evita conflitos de configuração de ambiente de desenvolvimento pessoal
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Arquivos gerados pelo Streamlit ---
+# Ignora o arquivo de segredos, mas permite o 'config.toml' do tema.
+.streamlit/secrets.toml
+
+# --- Arquivos de instalação e distribuição do Python ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Arquivos gerados pelo Sistema Operacional ---
+# Lixo gerado por macOS, Windows e Linux
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Arquivos de dados (Opcional) ---
+# Descomente as linhas abaixo se você tiver planilhas de teste locais
+# que não devem ir para o repositório.
+*.xlsx
+*.xls
+*.csv
+data/
