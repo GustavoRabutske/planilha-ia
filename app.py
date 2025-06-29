@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="InsightXpress",
     page_icon="💡",
     layout="centered",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="expanded"
 )
 
 # --- Inicialização do App ---
@@ -70,6 +70,16 @@ with st.sidebar:
 
     st.divider()
     st.info("Para alterar o tema, use o menu (☰) > Settings.")
+
+    # --- Rodapé (Footer) ---
+    footer_html = """
+    <div style="text-align: center; padding-top: 20px; color: grey; font-size: 14px;">
+        <p>Feito por <a href="https://www.linkedin.com/in/gustavo-castro-06668b231/" target="_blank" style="color: grey; text-decoration: none;">Gustavo Rabutske</a> | Projeto de Portfólio</p>
+    </div>
+    """
+
+    # Adiciona o rodapé na barra lateral
+    st.sidebar.markdown(footer_html, unsafe_allow_html=True)
 
 
 # --- Lógica Principal e Exibição de Resultados (Nenhuma mudança aqui) ---
