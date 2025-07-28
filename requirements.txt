@@ -1,7 +1,7 @@
 streamlit
 pandas
 matplotlib
-openai
 openpyxl
 tiktoken
 python-dotenv
+groq
